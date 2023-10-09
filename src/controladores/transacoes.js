@@ -1,3 +1,4 @@
+const { id } = require('date-fns/locale');
 const banco = require('../bancodedados');
 const { format } = require('date-fns')
 
@@ -79,11 +80,12 @@ const saldo = (req,res)=>{
 
 const extrato = (req,res)=>{
     const { numero_conta } = req.query
-    console.log(banco.depositos[0].numero_conta);
+    
+
+    
     const depositos = banco.depositos.filter((i)=>{
         return i.numero_conta === numero_conta
     })
-    
     const saques = banco.saques.filter((i)=>{
         return i.numero_conta === numero_conta
     })
@@ -94,7 +96,7 @@ const extrato = (req,res)=>{
         return i.numero_conta_destino === numero_conta
     })
 
-    console.log(depositos);
+    
     const extratos = {
        depositos,
        saques,
