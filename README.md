@@ -1,1 +1,0 @@
-Projeto autoral realizado com intuito de mostrar meus conhecimentos e stacks voltado para a área back-end em JavaScript. Esse projeto foi desenvolvido com o bootcamp da Cubos Academy num desafio voltado para API-rest.
