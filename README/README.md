@@ -1,4 +1,6 @@
-Projeto autoral realizado com intuito de mostrar meus conhecimentos e stacks voltado para a área back-end em JavaScript. Esse projeto foi desenvolvido com o bootcamp da Cubos Academy num desafio voltado para API-rest.
+**BANCO FUNCIONAL**
+
+Este projeto foi realizado com o intuito de praticar os conhecimentos adquiridos na área back-end em JavaScript. Este projeto foi desenvolvido no bootcamp da Cubos Academy em um desafio voltado para API-rest, utilizando também Express e para a viabilização das rotas utilizei a ferramenta Insomnia.
 
 No end-point "Listar Contas" ele irá mostrar um array vazio onde irá ser incrementado a cada vez que você enviar um novo item do end-point "Criar Contas".
 ![Alt text](image.png)
