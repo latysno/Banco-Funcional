@@ -67,6 +67,24 @@ const validarAtt = (req,res,next)=>{
         return user.numero_conta === Number(req.params.numeroConta)
     })
 
+    const validarCpf = banco.contas.find((valida)=>{
+        return valida.cpf === cpf
+    })
+    
+    if(validarCpf){
+        return res.status(400).json({mensagem:'cpf invalido'})
+    
+    }
+    
+    const validarEmail = banco.contas.find((valida)=>{
+        return valida.email === email
+    })
+    
+    if(validarEmail){
+        return res.status(400).json({mensagem:'email invalido'})
+    
+    }
+
     if(!idUser){
         return res.status(404).json({mensagem:'Usuário não encontrado'})
     }
